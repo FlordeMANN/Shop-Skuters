@@ -1,4 +1,6 @@
 
+import Content from './components/content/Content';
+
 
 import React from 'react';
 import { connect} from 'react-redux'
@@ -7,6 +9,7 @@ import { connect} from 'react-redux'
 function App(props) {
     return (
         <div className = "App" >
+            <Content />
         </div>
     );
 }
