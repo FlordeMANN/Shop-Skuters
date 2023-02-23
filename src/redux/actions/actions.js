@@ -1,0 +1,6 @@
+export const CHANGE_PRODUCTS = 'CHANGE_PRODUCTS'
+export const CHANGE_PRODUCT = 'CHANGE_PRODUCT'
+export const GET_GYRO = 'GET_GYRO'
+export const GET_SEGWAY = 'GET_SEGWAY'
+export const GET_ELEC = 'GET_ELEC'
+export const GET_PRODUCTS = 'GET_PRODUCTS'
