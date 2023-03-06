@@ -4,7 +4,7 @@ import Modal from './components/modal/Modal'
 
 import React from 'react';
 import { connect} from 'react-redux'
-import Footer from './components/footer/Footer';
+
 import ScrollArrow from './components/ScrollArrow/ScrollArrow';
 
 function App(props) {
@@ -13,7 +13,7 @@ function App(props) {
             <Header />
             <Modal />
             <Content />
-            <Footer />
+           
             <ScrollArrow />
         </div>
     );
