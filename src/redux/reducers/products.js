@@ -8,5 +8,6 @@ const products = [
     { _id: 6, img: "./img/Список товаров/Электросамокаты/1.jpg", type: "Электросамокат", title: "Xiaomi Mijia Electric Scooter m187 Black (Черный)", price: 20480 },
     { _id: 7, img: "./img/Список товаров/Электросамокаты/2.jpg", type: "Электросамокат", title: "KUGOO S4 (8800mAh)", price: 13480 },
     { _id: 8, img: "./img/Список товаров/Электросамокаты/3.jpg", type: "Электросамокат", title: "SUBOR D9", price: 11790 },
+
 ]
 export default products
