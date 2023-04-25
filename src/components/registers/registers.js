@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { auth } from '../firebase';
+import { auth } from '../../utils/firebase';
+
 
 const Register = () => {
   const [email, setEmail] = useState('');
