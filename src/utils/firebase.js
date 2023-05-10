@@ -1,10 +1,17 @@
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
-import 'firebase/storage';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import 'firebase/compat/storage';
 
-const firebaseConfig = {
-  // здесь вы должны вставить свои настройки конфигурации Firebase, которые вы можете найти на веб-сайте Firebase
+const firebaseConfig = {   
+  apiKey: "AIzaSyCQamvcZ6WMStzCyLHkw1fSJ5IOYB2g0vE",
+  authDomain: "shops-e24b4.firebaseapp.com", 
+  databaseURL: "https://shops-e24b4-default-rtdb.firebaseio.com",
+  projectId: "shops-e24b4", 
+  storageBucket: "shops-e24b4.appspot.com", 
+  messagingSenderId: "766763700730",
+  appId: "1:766763700730:web:d85f9fd90dc87e0783d443",
+  measurementId: "G-QDG3JX5KMS"
 };
 
 firebase.initializeApp(firebaseConfig);

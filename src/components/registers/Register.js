@@ -17,19 +17,18 @@ const Register = () => {
 
   const handleRegister = async (event) => {
     event.preventDefault();
-
-    try {
-      const { user } = await auth.createUserWithEmailAndPassword(email, password);
-      console.log(user);
-    } catch (error) {
+    auth.createUserWithEmailAndPassword(email, password);
+    setError('Пользователь зарегистрирован')
+    .catch((error) => {
       setError(error.message);
-    }
+    });
+    
   };
 
   return (
     <div>
       <h2>Register</h2>
-      <form onSubmit={handleRegister}>
+      <form >
         <div>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" value={email} onChange={handleEmailChange} />
@@ -38,7 +37,7 @@ const Register = () => {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" value={password} onChange={handlePasswordChange} />
         </div>
-        <button type="submit">Register</button>
+        <button onClick={e => handleRegister(e)} type="submit">Register</button>
       </form>
       {error && <p>{error}</p>}
     </div>
